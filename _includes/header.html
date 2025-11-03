@@ -1,0 +1,25 @@
+<header class="site-header">
+    <nav class="container">
+        <div class="nav-wrapper">
+            <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>About</a></li>
+                {% if site.author.linkedin %}
+                <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank">LinkedIn</a></li>
+                {% endif %}
+                <li><a href="{{ '/assets/documents/resume.pdf' | relative_url }}" target="_blank">Resume</a></li>
+                <li><a href="{{ '/assets/documents/Portfolio_website.pdf' | relative_url }}" target="_blank">UX Portfolio</a></li>
+                {% if site.author.scholar %}
+                <li><a href="{{ site.author.scholar }}" target="_blank">Google Scholar</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+</header>

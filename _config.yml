@@ -1,0 +1,47 @@
+# Site settings
+title: Grayson M. Butcher
+description: >-
+  UX Researcher and Behavioral Scientist with 10+ years of experience in learning,
+  motivation, and decision-making research. PhD in Health Service Research specializing
+  in quantitative experimentation and qualitative research.
+baseurl: "" # Leave empty for GitHub Pages user site (username.github.io)
+url: "" # Will be set by GitHub Pages
+
+# SEO and Social
+lang: en_US
+twitter:
+  card: summary
+social:
+  name: Grayson M. Butcher
+  links:
+    - https://www.linkedin.com/in/grayson-m-butcher
+    - https://github.com/GraysonButcher
+    - https://scholar.google.com/citations?user=QlA5OAIAAAAJ&hl=en&oi=ao
+
+# Author/Owner info
+author:
+  name: Grayson M. Butcher
+  bio: "UX Researcher & Behavioral Scientist"
+  linkedin: grayson-m-butcher
+  github: GraysonButcher
+  scholar: https://scholar.google.com/citations?user=QlA5OAIAAAAJ&hl=en&oi=ao
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
